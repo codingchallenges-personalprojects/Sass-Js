@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Dongle:wght@300&family=Indie+Flower&family=Montserrat:wght@200&family=Open+Sans:wght@300&family=Rajdhani&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link href="./main.css" />
+
+    <title>Fake News</title>
+  </head>
+  <body>
+    <div class="homepage_container">
+      <div class="header_container">
+        <div id="header">
+          <div id="bars_icon"><i class="fa-solid fa-bars"></i></div>
+          <h2 id="main_title">Fake News</h2>
+
+          <div id="user_icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+        <div id="error_container"></div>
+      </div>
+      <div class="main_container">
+        <div class="posts_container"></div>
+
+        <div class="user_input_container">
+          <p id="user_input_title">Post fake news or images...</p>
+
+          <form id="form">
+            <textarea
+              placeholder="  write your news here ..."
+              name="textarea"
+              type="text"
+              id="textarea_input"
+            ></textarea>
+
+            <div id="preview_image_container">
+              <div id="preview_image"></div>
+              <input
+                type="file"
+                id="image_input"
+                accept=".png, .jpg, .jpeg"
+                name="image"
+              />
+            </div>
+            <div id="submit_button_container">
+              <button type="submit" class="submit_button">
+                <p>Post</p>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

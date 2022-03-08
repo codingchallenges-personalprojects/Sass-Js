@@ -1,0 +1,25 @@
+// font-family
+$body-font-family: Helvetica, sans-serif;
+
+// font-weight
+$font-weights: (
+  "regular": 400,
+  "medium": 700,
+  "bold-weight": 800,
+);
+
+// font-size
+$font-sizes: (
+  "large": 32px,
+  "medium": 28px,
+  "regular": 16px,
+  "small": 12px,
+);
+
+// color
+$colors: (
+  "light-green": #74db7d,
+  "light-beige": #eee2dc,
+  "black-background": #2b2929,
+  "dark-pink": #f54263,
+);

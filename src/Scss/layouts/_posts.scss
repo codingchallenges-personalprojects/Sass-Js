@@ -1,0 +1,8 @@
+.posts_container {
+  display: grid;
+  row-gap: 50px;
+  grid-template-rows: repeat(auto-fit, 200px);
+  overflow: auto;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}

@@ -1,0 +1,96 @@
+.user_input_container {
+  display: grid;
+  grid-template-rows: 0.5fr 7fr;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  width: 95%;
+  background-color: map-get($colors, black-background);
+
+  box-shadow: -5px 5px 5px -2px map-get($colors, light-beige);
+}
+
+#user_input_title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: map-get($font-sizes, regular);
+  font-weight: map-get($font-weights, bold-weight);
+  color: map-get($colors, light-green);
+  margin: auto;
+}
+#form {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 3fr 1fr;
+}
+
+#textarea_input {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 90%;
+  height: 90%;
+  border-radius: 4px;
+  margin: auto;
+  resize: none;
+  background-color: map-get($colors, white);
+  &:hover {
+    box-shadow: 0 0 10px 5px map-get($colors, light-beige);
+  }
+}
+
+#preview_image_container {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template-rows: 0.25fr 1fr;
+}
+
+#preview_image {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // box-shadow: 0 0 10px 5px map-get($colors, light-beige);
+  border-radius: 5px;
+}
+
+#image_input {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-left: 15%;
+  margin-top: 15px;
+  color: map-get($colors, light-beige);
+}
+
+#submit_button_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.submit_button {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 60%;
+  height: 80%;
+  background-color: map-get($colors, light-green);
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  &:hover {
+    box-shadow: 0 0 10px 5px map-get($colors, light-beige);
+  }
+  p {
+    color: map-get($colors, background-color);
+    font-size: map-get($font-sizes, regular);
+    font-weight: map-get($font-weights, medium);
+  }
+}

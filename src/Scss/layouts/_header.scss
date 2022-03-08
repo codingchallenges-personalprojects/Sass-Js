@@ -1,0 +1,64 @@
+.header_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 40px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#header {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  height: 100px;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  box-shadow: 0 5px 5px -3px map-get($colors, light-beige);
+  background-color: map-get($colors, light-beige);
+  border: 1px solid map-get($colors, light-beige);
+  // margin: auto;
+  border-radius: 5px;
+}
+
+#error_container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin: auto;
+}
+#error {
+  color: map-get($colors, dark-pink);
+  font-size: map-get($font-sizes, medium);
+  font-weight: map-get($font-weights, medium);
+}
+
+#main_title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  color: map-get($colors, dark-blue);
+  font-size: map-get($font-sizes, large);
+  margin: auto;
+}
+
+#bars_icon {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  font-weight: map-get($font-weights, bold);
+  font-size: map-get($font-sizes, large);
+  color: map-get($colors, dark-blue);
+
+  margin: auto;
+}
+
+#user_icon {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  font-weight: map-get($font-weights, bold);
+  font-size: map-get($font-sizes, large);
+  color: map-get($colors, dark-blue);
+  margin: auto;
+}
